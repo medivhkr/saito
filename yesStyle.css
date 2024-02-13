@@ -9,6 +9,11 @@ body {
     background-size: cover;
 }
 @media (max-width: 768px) {
+    #yesButton {
+        position: static; /* Или используйте 'relative' в зависимости от желаемого эффекта */
+        margin: 10px auto; /* Центрирование кнопки */
+        width: auto;
+    }
     .container, .buttons {
         width: 100%; /* Адаптация ширины контейнеров */
         flex-direction: column; /* Стек элементов вертикально */
@@ -29,7 +34,7 @@ body {
         height: auto; /* Сохранение пропорций изображений */
     }
 
-    #noButton, #yesButton {
+    #noButton, {
         position: static; /* Убираем абсолютное позиционирование для лучшей адаптации */
         margin: 10px auto; /* Центрирование кнопок */
     }
@@ -43,7 +48,7 @@ body {
 
 #yesButton {
     position: absolute;
-    margin-right: 150px;
+    right: 850px;
     /* Smooth movement */
 }
 
